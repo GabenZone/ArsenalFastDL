@@ -1,0 +1,244 @@
+"mapname_items_game"
+{
+	"items"
+	{
+		"4000"		// This is the ID for the new, custom weapon.
+		{
+			"name"						"natascha"					// Any name can be placed here, more for Devs to find weapons
+			"item_class"				"tf_weapon_minigun"						// Item itself. item_class calls upon the .ctx files in  /scripts/  directory.
+			"show_in_armory"			"1"													// Shows up as an unlock
+			"baseitem"					"0"													// This tells the game it's stock.
+			"item_slot"					"primary"											// ONLY USED FOR THE EQUIP MENU.
+			"item_quality"				"unique"											// Uses Yellow text color
+			"item_name"					"Natascha"						// Official string in /resource/tf2c_english.txt
+			"item_description"			"Now Sasha - Don't be jealous"							// Blank, but sets the item description using white text color
+			"propername"				"0"													// Adds "The" to make the name proper
+			"image_inventory"			"backpack/weapons/c_models/c_w_ludmila/c_w_ludmila"	// Inventory image
+			"image_inventory_size_w"	"128"												// Inventory image width
+			"image_inventory_size_h"	"82"												// Inventory image height
+			"model_world"				"models/weapons/c_models/c_minigun/c_minigun_natascha.mdl"				// For what model other players see
+			"model_player"				"models/weapons/c_models/c_minigun/c_minigun_natascha.mdl"	// For what you see on your first-person view
+			"attach_to_hands"			"1"													// 1 is c_models, 2 is v & w models.
+			
+			"used_by_classes"																// Sets the class that can equip this weapon
+			{
+				"heavy"					"1"												// In this case, only Engineer can equip this.
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"																	// Attributes are found in scripts/items_game.txt in the VPK
+			{
+				"heal on hit for rapidfire"
+				{
+					"attribute_class"	"add_onhit_addhealth"
+					"value"			"5"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"			"1.2"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"			"0.75"
+				}
+				"minigun spinup time increased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value"			"1.2"
+				}
+			}
+			"visuals"
+			{
+			}
+			
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"		// For the equip menu. Pickup sound.
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		// For the equip menu. Drop sound.		// For the equip menu. Drop sound.
+		}
+	"4001"		// This is the ID for the new, custom weapon.
+		{
+			"name"						"tomislav"					// Any name can be placed here, more for Devs to find weapons
+			"item_class"				"tf_weapon_minigun"						// Item itself. item_class calls upon the .ctx files in  /scripts/  directory.
+			"show_in_armory"			"1"													// Shows up as an unlock
+			"baseitem"					"0"													// This tells the game it's stock.
+			"item_slot"					"primary"											// ONLY USED FOR THE EQUIP MENU.
+			"item_quality"				"unique"											// Uses Yellow text color
+			"item_name"					"Tomislav"						// Official string in /resource/tf2c_english.txt
+			"item_description"			"        This gun spins down 20% faster.           Look at all those people scrambling around with their tiny, ugly guns. But this-- this gun is b-e-a-utiful."							// Blank, but sets the item description using white text color
+			"propername"				"0"													// Adds "The" to make the name proper
+			"image_inventory"			"backpack/workshop/weapons/c_models/c_tomislav/c_tomislav"	// Inventory image
+			"image_inventory_size_w"	"128"												// Inventory image width
+			"image_inventory_size_h"	"82"												// Inventory image height
+			"model_world"				"models/workshop/weapons/c_models/c_tomislav/c_tomislav.mdl"				// For what model other players see
+			"model_player"				"models/workshop/weapons/c_models/c_tomislav/c_tomislav.mdl"	// For what you see on your first-person view
+			"attach_to_hands"			"1"													// 1 is c_models, 2 is v & w models.
+			
+			"used_by_classes"																// Sets the class that can equip this weapon
+			{
+				"heavy"					"1"												// In this case, only Engineer can equip this.
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"																	// Attributes are found in scripts/items_game.txt in the VPK
+			{
+				"minigun spinup time decreased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value"			"0.8"
+				}
+				"minigun spindown time decreased"
+				{
+					"attribute_class"	"mult_minigun_spindown_time"
+					"value"			"0.8"
+				}
+				"weapon spread bonus"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"			"0.8"
+				}
+				"minigun no spin sounds"
+				{
+					"attribute_class"	"minigun_no_spin_sounds"
+					"value"			"0.8"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"			"1.25"
+				}
+			}
+			"visuals"
+			{
+				"sound_special3"	"Weapon_Tomislav.WindUp"
+				"sound_empty"	"Weapon_Tomislav.WindDown"
+				"sound_special1"	"Weapon_Tomislav.WindUp"
+				"sound_special2"	"Weapon_Tomislav.WindDown"
+			}
+			
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"		// For the equip menu. Pickup sound.
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		// For the equip menu. Drop sound.
+		}
+		"4002"		// This is the ID for the new, custom weapon.
+		{
+			"name"						"brass_beast"					// Any name can be placed here, more for Devs to find weapons
+			"item_class"				"tf_weapon_minigun"						// Item itself. item_class calls upon the .ctx files in  /scripts/  directory.
+			"show_in_armory"			"1"													// Shows up as an unlock
+			"baseitem"					"0"													// This tells the game it's stock.
+			"item_slot"					"primary"											// ONLY USED FOR THE EQUIP MENU.
+			"item_quality"				"unique"											// Uses Yellow text color
+			"item_name"					"Brass Beast"						// Official string in /resource/tf2c_english.txt
+			"item_description"			"I feel bigger. *Laughs* Good."							// Blank, but sets the item description using white text color
+			"propername"				"0"													// Adds "The" to make the name proper
+			"image_inventory"			"backpack/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun"	// Inventory image
+			"image_inventory_size_w"	"128"												// Inventory image width
+			"image_inventory_size_h"	"82"												// Inventory image height
+			"model_world"				"models/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun.mdl"				// For what model other players see
+			"model_player"				"models/workshop/weapons/c_models/c_gatling_gun/c_gatling_gun.mdl"	// For what you see on your first-person view
+			"attach_to_hands"			"1"													// 1 is c_models, 2 is v & w models.
+			
+			"used_by_classes"																// Sets the class that can equip this weapon
+			{
+				"heavy"					"1"												// In this case, only Engineer can equip this.
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"																	// Attributes are found in scripts/items_game.txt in the VPK
+			{
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"			"1.2"
+				}
+				"dmg taken from crit reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_crit"
+					"value"			"0.5"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"			"50"
+				}
+				"minigun spinup time increased"
+				{
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value"			"1.4"
+				}
+				"aiming movespeed decreased"
+				{
+					"attribute_class"	"mult_player_aiming_movespeed"
+					"value"			"0.5"
+				}
+			}
+			"visuals"
+			{
+			}
+			
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"		// For the equip menu. Pickup sound.
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		// For the equip menu. Drop sound.
+		}
+		"4003"		// This is the ID for the new, custom weapon.
+		{
+			"name"						"huo_long_heater"					// Any name can be placed here, more for Devs to find weapons
+			"item_class"				"tf_weapon_minigun"						// Item itself. item_class calls upon the .ctx files in  /scripts/  directory.
+			"show_in_armory"			"1"													// Shows up as an unlock
+			"baseitem"					"0"													// This tells the game it's stock.
+			"item_slot"					"primary"											// ONLY USED FOR THE EQUIP MENU.
+			"item_quality"				"unique"											// Uses Yellow text color
+			"item_name"					"Huo Long Heater"						// Official string in /resource/tf2c_english.txt
+			"item_description"			"This gun deals 25% more damage to burning players. The burning you feel? It is shame."							// Blank, but sets the item description using white text color
+			"propername"				"0"													// Adds "The" to make the name proper
+			"image_inventory"			"backpack/workshop_partner/weapons/c_models/c_canton/c_canton"	// Inventory image
+			"image_inventory_size_w"	"128"												// Inventory image width
+			"image_inventory_size_h"	"82"												// Inventory image height
+			"model_world"				"models/workshop_partner/weapons/c_models/c_canton/c_canton.mdl"				// For what model other players see
+			"model_player"				"models/workshop_partner/weapons/c_models/c_canton/c_canton.mdl"	// For what you see on your first-person view
+			"attach_to_hands"			"1"													// 1 is c_models, 2 is v & w models.
+			
+			"used_by_classes"																// Sets the class that can equip this weapon
+			{
+				"heavy"					"1"												// In this case, only Engineer can equip this.
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"																	// Attributes are found in scripts/items_game.txt in the VPK
+			{
+				"Set DamageType Ignite"
+				{
+					"attribute_class"	"set_dmgtype_ignite"
+					"value"			"1"
+				}
+				"damage bonus vs burning"
+				{
+					"attribute_class"	"mult_dmg_vs_burning"
+					"value"			"1.25"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"			"1.50"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"			"0.85"
+				}
+			}
+			"visuals"
+			{
+			}
+			
+			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"		// For the equip menu. Pickup sound.
+			"drop_sound"				"#ui/item_heavy_gun_drop.wav"		// For the equip menu. Drop sound.
+		}
+	}
+}
